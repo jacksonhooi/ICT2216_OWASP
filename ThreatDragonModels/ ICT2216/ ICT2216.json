@@ -72,6 +72,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Users"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -80,11 +83,11 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "7af45e77-e74e-40f6-85b3-494a4572a9fa",
             "zIndex": 1,
+            "id": "7af45e77-e74e-40f6-85b3-494a4572a9fa",
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "Users",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -95,8 +98,8 @@
           },
           {
             "position": {
-              "x": 323,
-              "y": 247
+              "x": 400,
+              "y": 210
             },
             "size": {
               "width": 112.5,
@@ -111,8 +114,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "7b9a60f9-fa81-4424-97b6-a4eed1376ead",
             "zIndex": 2,
+            "id": "7b9a60f9-fa81-4424-97b6-a4eed1376ead",
             "data": {
               "type": "tm.Actor",
               "name": "Actor",
@@ -121,6 +124,40 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 600,
+              "y": 280
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "caec021c-628c-4284-b6f8-b19ed8f2abfe",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "Process",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
               "threats": []
             }
           }
