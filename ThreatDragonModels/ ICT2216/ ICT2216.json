@@ -195,7 +195,7 @@
           {
             "position": {
               "x": 220,
-              "y": 90
+              "y": 80
             },
             "size": {
               "width": 112.5,
@@ -228,8 +228,8 @@
           },
           {
             "position": {
-              "x": 410,
-              "y": 200
+              "x": 440,
+              "y": 210
             },
             "size": {
               "width": 112.5,
@@ -237,8 +237,8 @@
             },
             "attrs": {
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -252,9 +252,23 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "835317a6-ab02-4553-ace5-ea18452ce640",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 1,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -290,6 +304,117 @@
               "privilegeLevel": "",
               "threats": []
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "bcff6e3b-cdc8-4440-9885-360ddf168d78",
+            "source": {
+              "x": -40,
+              "y": 200
+            },
+            "target": {
+              "x": 510,
+              "y": 10
+            },
+            "vertices": [
+              {
+                "x": 320,
+                "y": 200
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "e412ea9d-02c4-41fe-91c4-3d309cb36ed6",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 2,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "cf835265-8d82-4dc5-9e3d-7aff01d5f1f2",
+            "source": {
+              "x": 158,
+              "y": 270
+            },
+            "target": {
+              "x": 290,
+              "y": 370
+            },
+            "vertices": [
+              {
+                "x": 158,
+                "y": 330
+              },
+              {
+                "x": 180,
+                "y": 330
+              },
+              {
+                "x": 190,
+                "y": 310
+              },
+              {
+                "x": 210,
+                "y": 310
+              },
+              {
+                "x": 210,
+                "y": 350
+              },
+              {
+                "x": 230,
+                "y": 350
+              }
+            ]
           }
         ],
         "description": "Make Payment"
@@ -327,6 +452,6 @@
     ],
     "diagramTop": 8,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 2
   }
 }
