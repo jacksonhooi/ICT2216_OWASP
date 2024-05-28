@@ -72,9 +72,6 @@
               "height": 60
             },
             "attrs": {
-              "text": {
-                "text": "Users"
-              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -83,11 +80,11 @@
             },
             "visible": true,
             "shape": "actor",
-            "zIndex": 1,
             "id": "7af45e77-e74e-40f6-85b3-494a4572a9fa",
+            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
-              "name": "Users",
+              "name": "Actor",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -98,8 +95,8 @@
           },
           {
             "position": {
-              "x": 400,
-              "y": 210
+              "x": 323,
+              "y": 247
             },
             "size": {
               "width": 112.5,
@@ -114,8 +111,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "zIndex": 2,
             "id": "7b9a60f9-fa81-4424-97b6-a4eed1376ead",
+            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Actor",
@@ -124,40 +121,6 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 600,
-              "y": 280
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "id": "caec021c-628c-4284-b6f8-b19ed8f2abfe",
-            "zIndex": 3,
-            "data": {
-              "type": "tm.Process",
-              "name": "Process",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
               "threats": []
             }
           }
@@ -191,234 +154,7 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.2.0",
-        "cells": [
-          {
-            "position": {
-              "x": 220,
-              "y": 80
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Users"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "zIndex": 1,
-            "id": "76e33845-7313-43ec-b6db-70677a4ba550",
-            "data": {
-              "type": "tm.Actor",
-              "name": "Users",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 440,
-              "y": 210
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "zIndex": 2,
-            "id": "d2611006-fd48-4fe9-8a89-b2b41771fefa",
-            "data": {
-              "type": "tm.Actor",
-              "name": "Actor",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "providesAuthentication": false,
-              "threats": [
-                {
-                  "id": "835317a6-ab02-4553-ace5-ea18452ce640",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 1,
-                  "score": ""
-                }
-              ]
-            }
-          },
-          {
-            "position": {
-              "x": 630,
-              "y": 260
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "zIndex": 3,
-            "id": "0bab6f44-6b0d-46f9-b0a7-0f2fca28111b",
-            "data": {
-              "type": "tm.Process",
-              "name": "Process",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "bcff6e3b-cdc8-4440-9885-360ddf168d78",
-            "source": {
-              "x": -40,
-              "y": 200
-            },
-            "target": {
-              "x": 510,
-              "y": 10
-            },
-            "vertices": [
-              {
-                "x": 320,
-                "y": 200
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "e412ea9d-02c4-41fe-91c4-3d309cb36ed6",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 2,
-                  "score": ""
-                }
-              ]
-            },
-            "id": "cf835265-8d82-4dc5-9e3d-7aff01d5f1f2",
-            "source": {
-              "cell": "76e33845-7313-43ec-b6db-70677a4ba550"
-            },
-            "target": {
-              "cell": "d2611006-fd48-4fe9-8a89-b2b41771fefa"
-            },
-            "vertices": [
-              {
-                "x": 158,
-                "y": 330
-              },
-              {
-                "x": 180,
-                "y": 330
-              },
-              {
-                "x": 190,
-                "y": 310
-              },
-              {
-                "x": 210,
-                "y": 310
-              },
-              {
-                "x": 210,
-                "y": 350
-              },
-              {
-                "x": 230,
-                "y": 350
-              },
-              {
-                "x": 350,
-                "y": 300
-              }
-            ]
-          }
-        ],
+        "cells": [],
         "description": "Make Payment"
       },
       {
@@ -448,12 +184,44 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.2.0",
-        "cells": [],
+        "cells": [
+          {
+            "position": {
+              "x": 150,
+              "y": 70
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "94c2e214-32d9-4087-98cb-f4502a3bb41e",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Actor",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          }
+        ],
         "description": "C.R.U.D for accounts"
       }
     ],
     "diagramTop": 8,
     "reviewer": "",
-    "threatTop": 2
+    "threatTop": 0
   }
 }
