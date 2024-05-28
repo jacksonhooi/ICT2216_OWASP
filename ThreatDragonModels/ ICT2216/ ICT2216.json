@@ -72,6 +72,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Users"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -80,11 +83,11 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "7af45e77-e74e-40f6-85b3-494a4572a9fa",
             "zIndex": 1,
+            "id": "7af45e77-e74e-40f6-85b3-494a4572a9fa",
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "Users",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -95,8 +98,8 @@
           },
           {
             "position": {
-              "x": 323,
-              "y": 247
+              "x": 400,
+              "y": 210
             },
             "size": {
               "width": 112.5,
@@ -111,8 +114,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "7b9a60f9-fa81-4424-97b6-a4eed1376ead",
             "zIndex": 2,
+            "id": "7b9a60f9-fa81-4424-97b6-a4eed1376ead",
             "data": {
               "type": "tm.Actor",
               "name": "Actor",
@@ -121,6 +124,40 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 600,
+              "y": 280
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "caec021c-628c-4284-b6f8-b19ed8f2abfe",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "Process",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
               "threats": []
             }
           }
@@ -154,7 +191,200 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.2.0",
-        "cells": [],
+        "cells": [
+          {
+            "position": {
+              "x": 220,
+              "y": 80
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Users"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 1,
+            "id": "76e33845-7313-43ec-b6db-70677a4ba550",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Users",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 530,
+              "y": 190
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 2,
+            "id": "d2611006-fd48-4fe9-8a89-b2b41771fefa",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Actor",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 630,
+              "y": 260
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 3,
+            "id": "0bab6f44-6b0d-46f9-b0a7-0f2fca28111b",
+            "data": {
+              "type": "tm.Process",
+              "name": "Process",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "bcff6e3b-cdc8-4440-9885-360ddf168d78",
+            "source": {
+              "x": -40,
+              "y": 200
+            },
+            "target": {
+              "x": 510,
+              "y": 10
+            },
+            "vertices": [
+              {
+                "x": 320,
+                "y": 200
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payment Info",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "ae9affb6-dfae-4211-9fb9-62c78a760ae0",
+                  "title": "Intercept Payment Details",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "1b38dd0b-4719-4a9a-9085-f2c42cdc67de",
+            "source": {
+              "x": 340,
+              "y": 110
+            },
+            "target": {
+              "cell": "d2611006-fd48-4fe9-8a89-b2b41771fefa"
+            },
+            "labels": [
+              "Payment Info"
+            ],
+            "vertices": [
+              {
+                "x": 586.25,
+                "y": 70
+              }
+            ]
+          }
+        ],
         "description": "Make Payment"
       },
       {
@@ -184,44 +414,12 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.2.0",
-        "cells": [
-          {
-            "position": {
-              "x": 150,
-              "y": 70
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "id": "94c2e214-32d9-4087-98cb-f4502a3bb41e",
-            "zIndex": 1,
-            "data": {
-              "type": "tm.Actor",
-              "name": "Actor",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          }
-        ],
+        "cells": [],
         "description": "C.R.U.D for accounts"
       }
     ],
     "diagramTop": 8,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 3
   }
 }
