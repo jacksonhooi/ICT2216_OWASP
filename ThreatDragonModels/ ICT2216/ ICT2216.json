@@ -609,35 +609,6 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
-            "id": "eb881a75-0c37-4316-aa3c-f697f8247e43",
-            "source": {
-              "x": 420,
-              "y": 50
-            },
-            "target": {
-              "x": 475,
-              "y": 340
-            },
-            "vertices": [
-              {
-                "x": 440,
-                "y": 340
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
             "id": "9ff5401b-fb96-48c4-85dc-4b1179569c9e",
             "source": {
               "x": 190,
@@ -1086,6 +1057,35 @@
             ],
             "labels": [
               "User Result"
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "eb881a75-0c37-4316-aa3c-f697f8247e43",
+            "source": {
+              "x": 420,
+              "y": 50
+            },
+            "target": {
+              "x": 440,
+              "y": 420
+            },
+            "vertices": [
+              {
+                "x": 440,
+                "y": 340
+              }
             ]
           },
           {
