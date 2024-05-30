@@ -1269,8 +1269,8 @@
             },
             "vertices": [
               {
-                "x": 1140,
-                "y": 340
+                "x": 1250,
+                "y": 370
               }
             ]
           },
@@ -1575,15 +1575,15 @@
               "threats": []
             },
             "id": "5fc2cf73-bd66-4b34-a93f-bc26f4dd10b8",
+            "labels": [
+              "Send what to Display"
+            ],
             "source": {
               "cell": "5a3e5e58-5e52-4060-b232-50f3c6fe1a76"
             },
             "target": {
               "cell": "d2611006-fd48-4fe9-8a89-b2b41771fefa"
             },
-            "labels": [
-              "Send what to Display"
-            ],
             "vertices": [
               {
                 "x": 730,
@@ -1753,8 +1753,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "030aae49-2388-42ce-92e2-ba76c5d1b530",
             "zIndex": 15,
+            "id": "030aae49-2388-42ce-92e2-ba76c5d1b530",
             "data": {
               "type": "tm.Text",
               "name": "User/Device Boundary",
@@ -1777,8 +1777,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "443d4b1c-8848-41e3-987c-a9dcee696bf2",
             "zIndex": 16,
+            "id": "443d4b1c-8848-41e3-987c-a9dcee696bf2",
             "data": {
               "type": "tm.Text",
               "name": "Device/VM Boundary",
@@ -1801,8 +1801,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "91dd1940-6ad1-4854-8c78-1c1fea8ac332",
             "zIndex": 17,
+            "id": "91dd1940-6ad1-4854-8c78-1c1fea8ac332",
             "data": {
               "type": "tm.Text",
               "name": "VM/External Service Boundary",
