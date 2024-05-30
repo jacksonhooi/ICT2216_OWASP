@@ -1673,8 +1673,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "7f89c2c2-c9ab-4f88-b02d-0d33af398d74",
             "zIndex": 13,
+            "id": "7f89c2c2-c9ab-4f88-b02d-0d33af398d74",
             "data": {
               "type": "tm.Text",
               "name": "User / Device",
@@ -1697,13 +1697,13 @@
             },
             "visible": true,
             "shape": "td-text-block",
+            "zIndex": 14,
             "id": "f3c2ea70-9e94-4cee-a7b0-d84933bc657d",
             "data": {
               "type": "tm.Text",
               "name": "Device  / VM ",
               "hasOpenThreats": false
-            },
-            "zIndex": 14
+            }
           }
         ],
         "description": "Update Profile Page"
