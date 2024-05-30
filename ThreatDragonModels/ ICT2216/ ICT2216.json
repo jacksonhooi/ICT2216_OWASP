@@ -1963,7 +1963,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Some method collect/pass data",
+              "name": "Passing data",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1976,7 +1976,7 @@
             },
             "id": "c106998a-e180-4219-afa7-f154a74b8efd",
             "labels": [
-              "Some method collect/pass data"
+              "Passing data"
             ],
             "source": {
               "cell": "2f451c4c-a201-42f0-b6ac-180bad719aac"
