@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 200,
-              "y": 110
+              "x": 130,
+              "y": 220
             },
             "size": {
               "width": 112.5,
@@ -38,8 +38,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "988cdaf2-b63a-48e9-950c-d07ad7be55bc",
             "zIndex": 1,
+            "id": "988cdaf2-b63a-48e9-950c-d07ad7be55bc",
             "data": {
               "type": "tm.Actor",
               "name": "User",
@@ -49,6 +49,653 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 391,
+              "y": 220
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Browser"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "2cc58f86-4b4b-451b-926c-03e8e88da324",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Browser",
+              "description": "The user's browser that sends login requests.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Input Credentials",
+              "description": "The user enters their credentials (username and password) into the login form on the browser.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "24942e67-d0a7-41ee-bffb-07433b4bcad4",
+            "source": {
+              "cell": "988cdaf2-b63a-48e9-950c-d07ad7be55bc"
+            },
+            "target": {
+              "cell": "2cc58f86-4b4b-451b-926c-03e8e88da324"
+            },
+            "labels": [
+              "Input Credentials"
+            ],
+            "vertices": [
+              {
+                "x": 330,
+                "y": 150
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Sends Credentials",
+              "description": "The browser sends the user-entered credentials to the VM hosting the web application.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "d831fbde-ba43-44e1-8e89-cab14fcb2df6",
+            "source": {
+              "cell": "2cc58f86-4b4b-451b-926c-03e8e88da324"
+            },
+            "target": {
+              "cell": "50d2ab3f-f8d6-4a73-86b9-1d302c094df0"
+            },
+            "vertices": [
+              {
+                "x": 550,
+                "y": 150
+              }
+            ],
+            "labels": [
+              "Sends Credentials"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Process Credentials",
+              "description": "The VM forwards the credentials to the web application for validation.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "1bd5e07f-d4bc-4e23-b203-04561ea17fd6",
+            "source": {
+              "cell": "50d2ab3f-f8d6-4a73-86b9-1d302c094df0"
+            },
+            "target": {
+              "cell": "2099ef68-ecda-4cb0-8730-a5836da90552"
+            },
+            "vertices": [
+              {
+                "x": 760,
+                "y": 160
+              }
+            ],
+            "labels": [
+              "Process Credentials"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Query Credentials",
+              "description": "The web application queries the user database to validate the credentials.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "f82c54e9-3b01-4e79-af94-7661847e3486",
+            "source": {
+              "cell": "2099ef68-ecda-4cb0-8730-a5836da90552"
+            },
+            "target": {
+              "cell": "8a457294-49ea-4feb-b32a-95d6b83f5131"
+            },
+            "vertices": [
+              {
+                "x": 910,
+                "y": 150
+              }
+            ],
+            "labels": [
+              "Query Credentials"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Return Validation Result",
+              "description": "The database returns the validation result to the web application.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "bc696cbe-d16a-478e-84af-aab9c4fd57be",
+            "source": {
+              "x": 980,
+              "y": 280
+            },
+            "target": {
+              "cell": "2099ef68-ecda-4cb0-8730-a5836da90552"
+            },
+            "vertices": [
+              {
+                "x": 910,
+                "y": 330
+              }
+            ],
+            "labels": [
+              "Return Validation Result"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Process Validation Result",
+              "description": "The web application forwards the validation result back to the VM.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "6752e3a0-a686-4248-9be7-8662ee6aa16f",
+            "source": {
+              "cell": "2099ef68-ecda-4cb0-8730-a5836da90552"
+            },
+            "target": {
+              "x": 700,
+              "y": 280
+            },
+            "vertices": [
+              {
+                "x": 750,
+                "y": 350
+              }
+            ],
+            "labels": [
+              "Process Validation Result"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Display Authentication Result",
+              "description": "The VM sends the authentication result to the browser to display to the user.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "28d18814-e4a4-4949-a0a0-472ed1e1fbe7",
+            "source": {
+              "x": 650,
+              "y": 280
+            },
+            "target": {
+              "x": 470,
+              "y": 280
+            },
+            "vertices": [
+              {
+                "x": 550,
+                "y": 360
+              }
+            ],
+            "labels": [
+              "Display Authentication Result"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Display Login Form",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "97ec24de-85ab-4931-ae65-4d57b5c97c95",
+            "source": {
+              "cell": "2cc58f86-4b4b-451b-926c-03e8e88da324"
+            },
+            "target": {
+              "x": 200,
+              "y": 280
+            },
+            "labels": [
+              "Display Login Form"
+            ],
+            "vertices": [
+              {
+                "x": 330,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "34a0af97-1092-4913-af8b-731fb36cc79c",
+            "source": {
+              "x": 210,
+              "y": 40
+            },
+            "target": {
+              "x": 200,
+              "y": 460
+            },
+            "vertices": [
+              {
+                "x": 300,
+                "y": 260
+              }
+            ],
+            "labels": [
+              ""
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "8f4608b9-882e-4965-9e47-cf0bfb582355",
+            "source": {
+              "x": 430,
+              "y": 50
+            },
+            "target": {
+              "x": 470,
+              "y": 480
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 240
+              }
+            ],
+            "labels": [
+              ""
+            ]
+          },
+          {
+            "position": {
+              "x": 611,
+              "y": 220
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "VM"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "50d2ab3f-f8d6-4a73-86b9-1d302c094df0",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Actor",
+              "name": "VM",
+              "description": "The virtual machine that hosts the web application.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 813,
+              "y": 220
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Web App"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "2099ef68-ecda-4cb0-8730-a5836da90552",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Process",
+              "name": "Web App",
+              "description": "The web application that handles the authentication logic and validates user credentials.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 946,
+              "y": 220
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Database"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "8a457294-49ea-4feb-b32a-95d6b83f5131",
+            "zIndex": 13,
+            "data": {
+              "type": "tm.Store",
+              "name": "Database",
+              "description": "Stores hashed and salted user credentials.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 160,
+              "y": 0
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "User / Device"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "e16d5e31-c79a-40af-9e67-3ae0436cbc90",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Text",
+              "name": "User / Device",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 376,
+              "y": 0
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Device / VM"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "0f1afac8-68ba-49af-b7ce-bac1054d0acf",
+            "zIndex": 15,
+            "data": {
+              "type": "tm.Text",
+              "name": "Device / VM",
+              "hasOpenThreats": false
             }
           }
         ],
