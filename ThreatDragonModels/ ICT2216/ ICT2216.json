@@ -1585,8 +1585,8 @@
         "cells": [
           {
             "position": {
-              "x": 490,
-              "y": 160
+              "x": 530,
+              "y": 320
             },
             "size": {
               "width": 60,
@@ -1604,8 +1604,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "ada89a60-40db-45d7-87fa-41bca7bdd536",
             "zIndex": 1,
+            "id": "ada89a60-40db-45d7-87fa-41bca7bdd536",
             "data": {
               "type": "tm.Process",
               "name": "Add to cart",
@@ -1622,14 +1622,17 @@
           },
           {
             "position": {
-              "x": 219,
-              "y": 100
+              "x": 259,
+              "y": 260
             },
             "size": {
               "width": 112.5,
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "User"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -1638,11 +1641,11 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "d026b63a-b341-4178-8566-7b33d5ae71f5",
             "zIndex": 2,
+            "id": "d026b63a-b341-4178-8566-7b33d5ae71f5",
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "User",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1683,21 +1686,21 @@
               "threats": []
             },
             "id": "a73b7c50-47dc-46d7-a08f-e625e3adfd39",
-            "source": {
-              "x": 332,
-              "y": 124
-            },
-            "target": {
-              "x": 490,
-              "y": 180
-            },
             "labels": [
               "Add to cart"
             ],
+            "source": {
+              "x": 372,
+              "y": 284
+            },
+            "target": {
+              "x": 530,
+              "y": 340
+            },
             "vertices": [
               {
-                "x": 420,
-                "y": 160
+                "x": 450,
+                "y": 310
               }
             ]
           },
@@ -1733,22 +1736,22 @@
               "threats": []
             },
             "id": "e1dc1422-f1ef-48dd-af5c-d6180d56f42d",
+            "labels": [
+              "Confirmation"
+            ],
             "source": {
-              "x": 332,
-              "y": 160
+              "x": 372,
+              "y": 320
             },
             "target": {
-              "x": 480,
-              "y": 200
+              "x": 520,
+              "y": 360
             },
             "vertices": [
               {
-                "x": 410,
-                "y": 180
+                "x": 450,
+                "y": 340
               }
-            ],
-            "labels": [
-              "Confirmation"
             ]
           },
           {
@@ -1783,28 +1786,30 @@
               "threats": []
             },
             "id": "a9f2eda0-a1c5-4e00-a93d-3c66fbea5db1",
-            "source": {
-              "x": 550,
-              "y": 170
-            },
-            "target": {
-              "x": 660,
-              "y": 180
-            },
             "labels": [
               "Add item"
-            ]
+            ],
+            "source": {
+              "cell": "ada89a60-40db-45d7-87fa-41bca7bdd536"
+            },
+            "target": {
+              "x": 700,
+              "y": 350
+            }
           },
           {
             "position": {
-              "x": 666,
-              "y": 160
+              "x": 706,
+              "y": 320
             },
             "size": {
               "width": 112.5,
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Cart"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -1813,11 +1818,11 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "8b662496-9ba1-4fff-abe1-e1fa3a4eb92e",
             "zIndex": 11,
+            "id": "8b662496-9ba1-4fff-abe1-e1fa3a4eb92e",
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "Cart",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
