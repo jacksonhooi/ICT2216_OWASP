@@ -3480,7 +3480,304 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.2.0",
-        "cells": [],
+        "cells": [
+          {
+            "position": {
+              "x": 210,
+              "y": 170
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Admin"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "de980e7f-5485-48ef-b19e-9024942c8092",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Admin",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "eac5e3d4-ecce-4149-932a-7957cbd81e5c",
+            "source": {
+              "x": 360,
+              "y": 110
+            },
+            "target": {
+              "x": 320,
+              "y": 310
+            },
+            "vertices": [
+              {
+                "x": 400,
+                "y": 220
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Create Product",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "1728687a-ae56-4366-a2ab-717144214229",
+            "source": {
+              "cell": "de980e7f-5485-48ef-b19e-9024942c8092"
+            },
+            "target": {
+              "cell": "40bd664e-47d2-4bba-9017-a62917d0eaba"
+            },
+            "labels": [
+              "Create Product"
+            ],
+            "vertices": [
+              {
+                "x": 450,
+                "y": 200
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "c0670d32-5df9-407e-8296-24c81af19846",
+            "source": {
+              "x": 660,
+              "y": 110
+            },
+            "target": {
+              "x": 680,
+              "y": 440
+            },
+            "vertices": [
+              {
+                "x": 720,
+                "y": 260
+              }
+            ],
+            "labels": [
+              ""
+            ]
+          },
+          {
+            "position": {
+              "x": 322.5,
+              "y": 60
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "User/Device"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "ec3da19c-1016-4493-aec8-078d022f0be1",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Text",
+              "name": "User/Device",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 510,
+              "y": 220
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Browser"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "40bd664e-47d2-4bba-9017-a62917d0eaba",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Browser",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 640,
+              "y": 60
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Device/VM"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "c9dd2bae-6927-478e-88d3-4d574d6edf61",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Text",
+              "name": "Device/VM",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 1010,
+              "y": 300
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "VM"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "3cc4a2b0-fa4d-4395-b316-ffdd9d0f51e8",
+            "data": {
+              "type": "tm.Actor",
+              "name": "VM",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            },
+            "zIndex": 15
+          },
+          {
+            "position": {
+              "x": 790,
+              "y": 270
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Web App"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "1b4f842c-89fa-4e33-8f0d-18b7ab375a65",
+            "zIndex": 16,
+            "data": {
+              "type": "tm.Process",
+              "name": "Web App",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          }
+        ],
         "description": "C.R.U.D for products"
       },
       {
